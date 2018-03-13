@@ -1,0 +1,35 @@
+.container {
+ WIDTH: 1167px; HEIGHT: 450px;margin-left: 180px;
+  -moz-border-radius: 15px; 
+    -webkit-border-radius: 15px; 
+    border-radius:15px;       
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.container A IMG {
+ WIDTH: 1165px; HEIGHT: 450px
+}
+.container IMG {
+ BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.td_f A IMG {
+
+}
+.num {
+ POSITION: absolute; WIDTH: 90px; FLOAT: right; TOP: 400px; LEFT: 970px
+}
+.num LI {
+ TEXT-ALIGN: center; LINE-HEIGHT: 15px; LIST-STYLE-TYPE: none; MARGIN: 1px; WIDTH: 15px; FONT-FAMILY: Arial; BACKGROUND: url(http://pc.qq.com/pc/images/flashbutton.gif) no-repeat -15px 0px; FLOAT: left; HEIGHT: 15px; COLOR: #86a2b8; FONT-SIZE: 12px; CURSOR: pointer
+}
+.num LI.on {
+ LINE-HEIGHT: 15px; WIDTH: 15px; BACKGROUND: url(http://pc.qq.com/pc/images/flashbutton.gif) no-repeat; HEIGHT: 15px; COLOR: #ffffff
+}
+.more {
+ FLOAT: right
+}
+.more1 A {
+ TEXT-ALIGN: left; LINE-HEIGHT: 25px; MARGIN: 0px 0px 0px 10px; COLOR: #3373a3
+}
+img{
+     top:-100px;
+}

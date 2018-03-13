@@ -1,0 +1,32 @@
+/*外围样式*/
+.head1{
+	width: 1027px;
+	height: 1500px;
+	
+	margin: 0 auto;
+/*.doorer {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 auto;
+   
+}*/
+img.bg {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/
+/*下面样式*/
+#conten {
+   margin-left: 45px;
+    width: 942px;
+    border: 2px solid blue;
+    padding: 0 auto; ;
+
+}
+

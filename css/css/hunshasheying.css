@@ -1,0 +1,131 @@
+.container{
+	width: 100%;
+	height: 1500px;
+	border: 1px solid red;
+	/*background-color: gainsboro;*/
+	
+	}
+.mimg{
+	width: 1024px;
+	height: 721px;
+	border: 1px solid mediumblue;
+	margin-left: 147px;
+	}	
+	
+#top {
+  height: 165px;
+  /*background-color: greenyellow;*/
+}
+#top .top-m {
+  width: 1024px;
+  margin: 0 auto;
+  height: 165px;
+  background: url(../img/navborder.jpg) no-repeat right 140px;
+}
+#top h2 {
+  display: block;
+  height: 165px;
+  width: 165px;
+  float: left;
+  
+}
+a {
+  text-decoration: none;
+}
+#top h2 a {
+  display: block;
+  height: 165px;
+  width: 165px;
+  margin-top: -20px;
+}
+a {
+  text-decoration: none;
+}
+.mdo_r {
+  float: left;
+  width: 855px;
+  height: 125px;
+ /* background-color:yellowgreen;*/
+}
+
+.gonggao {
+  background: #6d6154 none repeat scroll 0 0;
+  color: #FFFFFF;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+.gonggao span {
+  margin-left: 735px;
+}
+#navMenu {
+  overflow: hidden;
+  width: 855px;
+  padding-top: 10px;
+  /*background-color: yellow;*/
+}
+#navMenu ul li {
+  FLOAT: left;
+  LIST-STYLE-IMAGE: none;
+  width: 140px;
+  height: 90px;
+  margin-left: 15px;
+  float: left;
+  display: block;
+  LIST-STYLE-TYPE: none;
+  /*background-color: bisque;*/
+}
+#navMenu ul li a {
+  COLOR: #333;
+  text-align: center;
+  line-height: 90px;
+  FONT-SIZE: 22px;
+  display: block;
+  font-family: "宋体";
+  font-weight: bold;
+  color: #746552;
+  /*text-indent: -9999px; */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

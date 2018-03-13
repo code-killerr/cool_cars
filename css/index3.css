@@ -1,0 +1,213 @@
+			*{
+							margin: 0px;
+							padding: 0px;
+						}
+				/*body{
+				    min-width: 1200px;
+					background-color: black;
+				}*/
+				.bjtp{
+					width: 100%;
+					height: 100%;
+					background-repeat: no-repeat;
+					/*background-attachment: fixed;*/
+					/*border: 1px solid red;*/	
+					background-size:137% 113%;				
+				}
+				a{
+					text-decoration: none;
+				}
+				.all{
+					height: 1293px;
+					min-width:1300px;
+				}
+				.title{
+					width:1165;
+					height:24px;
+					border: 1px solid black;
+					background:grey;
+					opacity: 0.5;
+				}
+				.word1{
+					margin-left: 70px;
+					margin-bottom: 5px;
+					font-size: 15px;
+					float: left;
+				}
+				.word3{
+					float:right;
+					font-size:15px;
+					margin-left: 20px;
+				}
+				.div-ul{
+					width:400px;
+					height:20px;
+					float:right;
+					margin-right:50px ;
+				}
+				ul{list-style: none;}
+				.word2{
+					font-size:15px;
+					color:black;
+				}
+				.container{
+				    width:150px;
+				    height: 50%;
+				   max-width:200px;
+				   background:rgba(0, 0, 0, 0.75);
+				   margin:150px 30px;
+				   padding:10px 0px 20px 0px;
+				   border:1px solid #111;
+				   border-radius:4px;
+				   box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+				   position: fixed;
+				}
+				.link{
+				   font-size:16px;
+				   font-weight:300;
+				   text-align:center;
+				   position:relative;
+				   height:40px;
+				   line-height:40px;
+				   margin-top:10px;
+				   overflow:hidden;
+				   width:90%;
+				   margin-left:5%;
+				   cursor:pointer;
+				}
+				.link:after{
+				   content: '';
+				   position:absolute;
+				   width:80%;
+				   border-bottom:1px solid rgba(255, 255, 255, 0);
+				   bottom:50%;
+				   left:-100%;
+				   transition-delay: all 0.5s;
+				   transition: all 0.5s;
+				}
+				.link:hover:after,
+				.link.hover:after{
+				   left:100%;
+				}
+				.link .text{
+				   text-shadow:0px -40px 0px rgba(255, 255, 255, 1);
+				   transition:all 0.75s;
+				   transform:translateY(100%) translateZ(0);
+				   transition-delay:all 0.25s;
+				}
+				.link:hover .text,
+				.link.hover .text{
+				   text-shadow:0px -40px 0px rgba(255, 255, 255, 0);
+				   transform:translateY(0%) translateZ(0) scale(1.1);
+				   font-weight:600;
+				}
+				.tu
+				{
+				 width: 150px;
+				 height: 148px;
+				 position: fixed;
+				 top: 30px;
+				 left: 27px;
+				}
+				.tu1
+				{
+					width: 149px;
+					height: 90px;
+				padding-left: 25px;
+				    padding-top: 9px;
+				}
+				.tu2
+				{
+					width: 149px;
+					height: 40px;
+					padding-left: 47px;
+					font-size: 20px;
+				}
+				.head{
+					width:1165px;
+					height:300px;
+					border: 1px solid white;
+					margin-left:180px;
+					margin-top:50px;
+					border-radius:15px ;
+				    background-size: 100% 100%;
+					opacity: 0.75;
+					text-align: center;
+					background:ghostwhite;
+				}
+				.middle{
+					background:ghostwhite;
+					width:1165px;
+					height:850px;
+					border: 1px solid white;
+					margin-left:180px;
+					margin-top:50px;
+					border-radius:15px ;
+				    background-size: 100% 100%;
+					opacity: 0.75;
+					text-align: center;
+				}
+				.img-style{
+					margin: 50px 500px;
+				}
+				.word4{
+					font-size: 20px;
+				}
+				a:hover{
+					color:red;
+				}
+				.input1{
+				width: 300px;
+				height: 40px;
+				margin-top: 52px;
+				padding-left: 10px;
+				border-radius: 4px;
+				border: 1px solid #2196F3;
+				margin-left: 15px;
+				}
+				#btn{
+				background-color:#F56600;
+				width: 310px;
+				color: white;
+				font-size: 20px;
+				border-radius: 5%;
+			    }
+			    .input2{
+			    	width: 300px;
+				height: 40px;
+				margin-top: 52px;
+				padding-left: 10px;
+				border-radius: 4px;
+				/*border: 1px solid #2196F3;*/
+				margin-left: 15px;
+				opacity: 1;
+				background-color:#F56600;
+				color: white;
+			    }
+			    .input2:hover{
+			    	opacity: 1;
+			    	background-color:red;
+			    }
+			    .textarea{
+			    	border-radius: 10px;
+			    	border: 1px solid #2196F3;
+			        
+			    }
+				.gg{
+					font-family: "楷体";
+					font-size: 25px;
+					color: #ff7634;
+					
+					}
+					.footer{
+						width:100%;
+						height:100px;
+						/*border: 1px solid white;*/
+						text-align: center;
+					 padding-top: 100px;
+					 margin-top:-50px;
+					}
+					.word5{
+						color:white;
+						margin-top:10px;
+					}

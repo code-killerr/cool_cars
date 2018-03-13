@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>跑车排行榜</title>
+		<link rel="shortcut icon" href="img/1.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			min-width: 1200px;
+			background-attachment: fixed;
+			background-image:url(img/background1.jpg);
+			background-repeat:no-repeat;
+			background-size:100%,100%;
+		}
+			.m1{
+				width:100%;
+				height:3000px;
+				/*border:2px solid red;*/
+				/*background-color:#BCE9B0;*/
+			}
+			.c1{
+				width:60%;
+				height:250px;
+				/*border:1px solid pink;*/
+				margin-left:20%;
+			}
+			.t11{
+				width:44%;
+				height:248px;
+				/*border:1px solid black;*/
+				float:left;
+				background-image:url(img/兰博基尼.jpg);
+				animation:fan 3s linear;
+			}
+			@keyframes fan{
+				from{
+					transform:scale(0)
+				}
+				to{
+					transform:scale(1)
+				}
+			}
+			.t12{
+				width:48%;
+				height:248px;
+				/*border:1px solid black;*/
+				float:right;
+				font-family: "楷体";
+				font-size:16px;
+				color:red;
+				padding-top:40px;
+			}
+			.t12:hover{
+				color:black;
+				font-family:"微软雅黑"；
+			}
+			.c2{
+				width:60%;
+				height:250px;
+				/*border:1px solid green;*/
+				margin-left:20%;
+			}
+			.t21{
+				width:50%;
+				height:248px;
+				/*border:1px solid black;*/
+				float:left;
+				font-size:16px;
+				font-family: "楷体";
+				color:#D5680E;
+				padding-top:10px;
+			}
+			.t21:hover{
+				color:black;
+				font-family: "微软雅黑";
+			}
+			.t22{
+				width:43.9%;
+				height:248px;
+				border:1px solid black;
+				float:right;
+				background-image:url(img/法拉利.jpg);
+				animation:lan 3s linear;
+			}
+			@keyframes lan{
+				from{
+					transform:scale(0)
+				}
+				to{
+					transform:scale(1)
+				}
+			}
+			.c3{
+				width:60%;
+				height:250px;
+				/*border:1px solid yellow;*/
+				margin-left:20%;
+			}
+			.t31{
+				width:50%;
+				height:248px;
+				/*border:1px solid red;*/
+				float:left;
+				font-family:"楷体" ;
+				color:#A7A8A3;
+				padding-top:20px;
+			}
+			.t31:hover{
+				color:black;
+				font-family:"微软雅黑" ;
+				font-size:18px;
+			}
+			.t32{
+				width:49.4%;
+				height:248px;
+				/*border:1px solid red;*/
+				float:right;
+				background-image:url(img/劳斯莱斯.jpg);
+				animation:jie 3s linear;
+			}
+			@keyframes jie{
+				from{
+					transform:scale(0)
+				}
+				to{
+					transform:scale(1)
+				}
+			}
+			.c4{
+				width:60%;
+				height:250px;
+				/*border:1px solid black;*/
+				margin-left:20%;
+			}
+			.t41{
+				width:50%;
+				height:248px;
+				/*border:1px solid red;*/
+				float:left;
+				font-family:"楷体";
+				color:#D1D0D6;
+			}
+			.t41:hover{
+				color:black;
+				font-family: "微软雅黑";
+			}
+			.t42{
+				width:49.4%;
+                height:248px;
+				/*border:1px solid red;*/
+				float:right;
+				background-image:url(img/世爵1.jpg);
+			}
+			.t42:hover{
+				background-image:url(img/世爵2.jpg);
+			}
+			.c5{
+				width:60%;
+				height:250px;
+				/*border:1px solid blue;*/
+				margin-left:20%;
+			}
+			.t51{
+				width:50%;
+				height:248px;
+				/*border:1px solid black;*/
+				float:left;
+				background-image:url(img/宾利1.jpg);
+			}
+			.t51:hover{
+				background-image:url(img/宾利2.jpg);
+				background-repeat:no-repeat;
+			}
+			.t52{
+				width:49%;
+				height:248px;
+				/*border:1px solid black;*/
+				float:right;
+				font-family: "楷体";
+				color:#FFF200;
+			}
+			.t52:hover{
+				color:black;
+				font-family: "微软雅黑";
+			}
+			.c6{
+				width:80%;
+				height:150px;
+				/*border:1px solid black;*/
+				margin-left:10%;
+			}
+			.t61{
+				width:100px;
+				height:45px;
+				/*border:1px solid pink;*/
+				float:left;
+				margin-top:52px;
+				background-image:url(img/b1.png);
+				background-size:100px;35px;
+				animation:b1 5s linear infinite;
+			}
+			@keyframes b1{
+				from{
+					transform: scale(1);
+				}
+				to{
+					transform: scale(2);
+					margin-left:800px;
+				}
+			}
+			.t62{
+				width:100px;
+				height:45px;
+				/*border:1px solid blue;*/
+				float:right;
+				background-image:url(img/b2.png);
+				background-size:100px;45px;
+				animation: b2 5s linear infinite;
+			}
+			@keyframes b2{
+				from{
+					transform:scale(1) ;
+				}
+				to{
+					transform: scale(2);
+					margin-right:800px;
+				}
+			}
+			.c7{
+				width:368.4px;
+				height:640px;
+				/*border:1px solid red;*/
+				float:left;
+				margin-left:360px;
+			}
+			.t71{
+				width:368px;
+				height:300px;
+				/*border:1px solid black;*/
+				background-image:url(img/迈巴赫1.jpg);
+				background-repeat:no-repeat;
+			}
+			.t71:hover{
+				background-image:url(img/迈巴赫2.jpg);
+				background-repeat:no-repeat;
+				border-radius: 40px;
+			}
+			.t72{
+				width:368px;
+				height:335px;
+				/*border:1px solid green;*/
+				font-family: "楷体";
+				color:#4B3E35;
+			}
+			.t72:hover{
+				color:black;
+				font-size:16px;
+				font-family: "微软雅黑";
+			}
+			.c8{
+				width:368.4px;
+				height:640px;
+				/*border:1px solid red;*/
+				float:right;
+				margin-right:340px;
+			}
+			.t81{
+				width:368px;
+				height:200px;
+				/*border:1px solid black;*/
+				font-family: "楷体";
+				color:#5D5186;
+			}
+			.t81:hover{
+				color:black;
+				font-size:15px;
+				font-family: "微软雅黑";
+			}
+			.t82{
+				width:368px;
+				height:435px;
+				/*border:1px solid green;*/
+				background-image:url(img/帕加尼1.jpg);
+				background-repeat:no-repeat;
+			}
+			.t82:hover{
+				background-image:url(img/帕加尼2.jpg);
+				background-repeat:no-repeat;
+				border-radius: 40px;
+			}
+			.c9{
+				width:368.4px;
+				height:640px;
+				/*border:1px solid red;*/
+				float:left;
+				margin-left:360px;
+			}
+			.t91{
+				width:368px;
+				height:304px;
+				/*border:1px solid black;*/
+				background-image:url(img/布加迪1.jpg);
+				background-repeat:no-repeat;
+			}
+			.t91:hover{
+				background-image:url(img/布加迪2.jpg);
+				background-repeat:no-repeat;
+				border-radius: 40px;
+			}
+			.t92{
+				width:368px;
+				height:335px;
+				/*border:1px solid green;*/
+				font-size:16px;
+				font-family: "楷体";
+			}
+			.t92:hover{
+				color:black;
+				font-size:20px;
+				font-family: "微软雅黑";
+			}
+			.c10{
+				width:368.4px;
+				height:640px;
+				/*border:1px solid red;*/
+				float:right;
+				margin-right:340px;
+			}
+			.t101{
+				width:368px;
+				height:235px;
+				/*border:1px solid black;*/
+				font-family:"楷体" ;
+			}
+			.t101:hover{
+				color:black;
+				font-size:15px;
+				font-family: "微软雅黑";
+			}
+			.t102{
+				width:380px;
+				height:380px;
+				/*border:1px solid pink;*/
+				background-size: 331px 359px;
+				background-repeat: no-repeat;
+				background-size:120% 100% ;
+				background-image: url(img/柯尼塞格1.jpg);
+			}
+			.t102:hover{
+				background-image:url(img/柯尼塞格2.jpg);
+				background-repeat:no-repeat;
+				background-size:115% 100% ;
+				border-radius: 40px;
+			}
+			.c11{
+				width:750px;
+				height:250px;
+				/*border:1px solid black;*/
+				margin-left:355px;
+				margin-top:1290px;
+			}
+			.t111{
+				width:50%;
+				height:250px;
+				/*border:1px solid black;*/
+				float:left;
+			    background-image:url(img/西尔贝1.jpg);
+			}
+			.t111:hover{
+				background-image:url(img/西尔贝2.jpg);
+				background-repeat:no-repeat;
+				border-radius: 40px;
+			}
+			.t112{
+				width:49.2%;
+				height:250px;
+				/*border:1px solid red;*/
+				float:right;
+				font-family: "楷体";
+				color:#EABE29;
+				padding-top:20px;
+			}
+			.t112:hover{
+				color:black;
+				font-size:20px;
+				font-family: "微软雅黑";
+			}
+			.m2{
+				width:100%;
+				height:100px;
+				/*border: 1px solid black;*/
+				text-align: center;
+			 	padding-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tu">
+	    	<div class="tu1">
+	    		<a href="second.html"><img src="img/log99.png" style="width: 100px;height: 83px;"/></a>
+	    	</div>
+	    	<div class="tu2">
+	    		<p style="color: gainsboro; font-weight:900 ;">加速度</p>
+	    	</div>
+		</div>
+			<script src="js/index.js"></script>
+			<div class="title">
+    		<p class="word1">欢迎来到炫酷的跑车世界！！</p>
+    		<div class="div-ul">
+	    		<ul>
+	    			<li class="word3"><a href="" class="word2">公司概况</a></li><li class="word3"></li>
+	    		</ul>
+    		</div>
+    	</div>
+    	<div class="m1">
+<div class="container">
+  <div class="link">
+    <div class="text"><a href="second.html" style="color: white;">首页</a></div>
+  </div>
+  <div class="link">
+    <div class="text"><a href="Ferrari.html" style="color: white;">跑车制造商</a></div>
+  </div>
+  <div class="link">
+    <div class="text"><a href="fourth.html" style="color: white;">跑车排行榜</a></div>
+  </div>
+  <div class="link">
+    <div class="text"><a href="fifth.html" style="color: white;">知名超跑车</a></div>
+  </div>
+  <div class="link">
+    <div class="text"><a href="first.html" style="color: white;">重新载入</a></div>
+  </div>
+  <div class="link">
+    <div class="text"><a href="sixth.html" style="color: white;">联系我们</a></div>
+  </div>
+</div>
+
+
+
+		    <div class="c1">
+		        <div class="t11">
+		        
+		        </div>
+		        <div class="t12">
+		        	<p>NO.10 兰博基尼<br />
+		        	      参考售价：最低200万<br />
+                                              兰博基尼简介：兰博基尼汽车公司(Automobili Lamborghini S.p.A.)是
+                                              一家坐落于意大利圣亚加塔·波隆尼(Sant'Agata Bolognese)的超级跑车制
+                                              造公司，1963年由费鲁吉欧·兰博基尼创立。早期，因公司经营不善，兰博基尼
+                                              在1980年破产，数次易主后，于1998年归入奥迪旗下，目前为大众集团
+                       (Volkswagen Group)所持有的品牌之一。兰博基尼的标志是一头充满力量、
+                                              正向对方攻击的斗牛，与大马力高速跑车的特性吻合，也体现了创始人兰博基尼
+                                              斗牛般不甘示弱的个性。
+                    </p>
+		        </div>
+		    </div>
+		    <div class="c2">
+		        <div class="t21">
+		         	<p>NO.9法拉利<br/>
+		         	     参考售价：最低300万<br />
+                                          　法拉利简介：法拉利(Ferrari)是一家意大利汽车生产商，1929年由恩佐·法拉利
+                       (Enzo Ferrari)创办，主要制造一级方程式赛车、赛车及高性能跑车。法拉利是
+                                             世界上最闻名的赛车和运动跑车的生产厂家，早期的法拉利赞助赛车手及生产赛车，
+                       1947年独立生产汽车，其后变成今日的规模。菲亚特(FIAT)拥有法拉利90%的股权，
+                                             但法拉利却能独立于菲亚特运营。法拉利汽车大部分采用手工制造，因而产量很低，
+                      2011年法拉利共交付7195台新车，为法拉利史上最佳销售业绩。公司总部在意大利
+                                           的摩德纳(Modena)。
+                    </p>
+		        </div>
+		        <div class="t22">
+		        	
+		        </div>
+		    </div>
+		    <div class="c3">
+		        <div class="t31">
+		     	    <p>　NO.8劳斯莱斯<br/>
+		     	    	参考售价：最低400万<br />
+                                                 劳斯莱斯简介：劳斯莱斯(Rolls-Royce)是世界顶级豪华轿车厂商，1906年成立
+                                                 于英国，公司创始人为Frederick Henry Royce(亨利·莱斯)和Charles 
+                        Stewart Rolls(查理·劳斯)。Rolls-Royce出产的轿车是顶级汽车的杰出代表，
+                                                以豪华而享誉全球。除了制造汽车，劳斯莱斯还涉足飞机发动机制造领域，它也是
+                                                世界上最优秀的发动机制造者，著名的波音客机用的就是劳斯莱斯的发动机。2003
+                                                年劳斯莱斯汽车公司被宝马(BMW)接手。
+                    </p>
+		        </div>
+		        <div class="t32">
+		        	
+		        </div>
+		    </div>
+		    <div class="c4">
+		        <div class="t41">
+		     	     <p>NO.7世爵<br />
+		     	     	参考售价：最低500万<br />
+                                               世爵简介：世爵作为历史超过百年的老厂，一直保持着品牌独特的风格。他们生产
+                                               的跑车全部为手工打造，多项指标采用F1标准。作为知名的极品豪华运动汽车制造
+                                               商，世爵制造的贵族运动汽车完全依据客户的需求量身定制。世爵的目标是运动汽
+                                               车市场的最高端的用户，这些客户主要集中在美国、西欧、中东以及一些较小的富
+                                               裕的国家，比如说瑞士和摩纳哥等等。
+                    </p>
+		        </div>
+		        <div class="t42">
+		        	
+		        </div>
+		    </div>
+		    <div class="c5">
+		        <div class="t51">
+		            
+		        </div>
+		        <div class="t52">
+		            	<p>　NO.6宾利<br />
+		            		参考售价：最低500万<br />
+                                                        宾利简介：宾利汽车公司(BentleyMotors Limited)是世界著名的英国汽车
+                                                        制造商，由沃尔特·欧文·宾利创建于1919年1月18日。一战期间，宾利以生产
+                                                        航空发动机而闻名，战后，宾利开始设计制造汽车产品。1931年宾利被劳斯莱
+                                                        斯收购，1998年劳斯莱斯和宾利都被大众集团买下。在近百年的历史中，宾利
+                                                        历经时间的洗礼，依然历久弥新，熠熠生辉，呈现给世人的永远是尊贵、典雅、
+                                                        动力、舒适与精工细做的最完美结合。
+                        </p>
+		        </div>
+		    </div>
+		    <div class="c6">
+		     	<div class="t61">
+		     		
+		     	</div>
+		     	<div class="t62">
+		     		
+		     	</div>
+		    </div>
+		    <div class="c7">
+		    	<div class="t71">
+		
+		    	</div>
+		    	<div class="t72">
+		    		<p> NO.5迈巴赫<br />
+		    			参考售价：最低500万<br />
+                                                迈巴赫简介：迈巴赫(德文：Maybach)与迈巴赫引擎制造厂(德文：
+                        Maybach-Motorenbau GmbH)是一曾经在1921年到1940年间活跃
+                                               于欧洲地区的德国超豪华汽车品牌与制造厂，车厂创始人卡尔·迈巴赫
+                        (Karl Maybach)的父亲威廉·迈巴赫(Wilhelm Maybach)曾担任戴
+                                               姆勒发动机公司(今日戴姆勒·克莱斯勒集团前身)的首席技术总监，两
+                                               厂渊源甚深。1997年戴姆勒·克莱斯勒集团在东京车展会场中展出一辆
+                                               以Maybach为名的概念性超豪华四门轿车，正式让这个德国汽车品牌在
+                                               销声匿迹多年后再次复活。但是由于市场业绩不佳，迈巴赫系列轿车将
+                                               于2013年全面停产。
+		    		</p>
+		    	</div>
+		    </div>
+		    <div class="c8">
+		    	<div class="t81">
+		    		<p>NO.4帕加尼<br />
+		    		     参考售价：最低1200万<br />
+                                             帕加尼简介：帕加尼(Pagani Automobili S.p.A.)是一家世界知名的超级跑车
+                                             制造商，公司创始人为奥拉西欧·帕加尼(Horacio Pagani)。与大名鼎鼎的法拉
+                                             利一样，诞生于素有超跑之乡美誉的意大利小镇摩德纳(Modena)。帕加尼所生产的
+                                             超级跑车以极致的性能、大量采用纯手工打造的精湛工艺、昂贵的售价以及订单生
+                                             产的稀有产量闻名于世。旗下代表车系有：1999年正式发布的帕加尼Zonda、2011
+                                             年推出的第二个全新车系帕加尼Huayra。
+                      </p>
+		    	</div>
+		    	<div class="t82">
+		    	
+		    	</div>
+		    </div>
+		    <div class="c9">
+		    	<div class="t91">
+		    	
+		    	</div>
+		    	<div class="t92">
+		    		<p>NO.3布加迪<br />
+		    		     参考售价：最低2500万<br />
+                                             布加迪简介：布加迪是意大利最具有特色的超级跑车车厂之一。布加迪以生产
+                                             世界上最好的及最快的车闻名于世。最原始的布加迪品牌已经在第二次世界大
+                                             战后消失。不过战后此品牌曾经有两度中兴，目前它是大众集团旗下的一个品牌。
+                    </p>
+		    	</div>
+		    </div>
+		    <div class="c10">
+		    	<div class="t101">
+		    		<p>NO.2柯尼塞格<br />
+		    		      参考售价：最低2600万<br />
+                                              柯尼塞格简介：Koenigsegg是一家来自瑞典的超级跑车制造商，1994年由
+                       Christian von Koenigsegg创立，致力于生产出世界级的跑车。
+                       Koenigsegg一词为“刀锋”的意思，作为略带瑞典皇家色彩的跑车，
+                                              其标志同瑞典皇家空军相同，主图案为一幽灵造型，因此也有很多
+                                              车友称它为“幽灵”跑车。作为一家世界级的超级跑车公司，Koenigsegg在
+                                              中国的第一次亮相是在2005年的上海车展上，当时Koenigsegg公司的工作
+                                              人员透露，他们将尽快进入中国市场。而2012年，这款猛兽将正式进驻。
+                    </p>
+		    	</div>
+		    	<div class="t102">
+		 
+		    	</div>
+		    </div>
+		    <div class="c11">
+		    	<div class="t111">
+		    		
+		    	</div>
+		    	<div class="t112">
+		    		<p> NO.1西尔贝<br />
+		    			参考售价：最低5000万<br />
+                                                西尔贝简介：西尔贝是Shelby Supercars(又简称SSC)的中文译文，后面
+                                                还有个Supercars，表明公司的成立旨在只打造高端的超级跑车系列。公司
+                                                于1999年由美国的汽车爱好者Jerod Shelby成立，和其他著名的跑车品牌
+                                                一样，公司名字也使用创始者的名字。这是一家很年轻但起点非常高的超跑
+                                                公司，总部设在华盛顿。
+                        </p>
+		    	</div>
+		    </div>
+		</div>
+		<div class="footer">
+		     <p class="word5" style="color: gray;">所有作品均由创意团队网上收集，所展示的作品均用来进行非盈利活动，转至加速度只为让更多人知晓。</p>
+		     <p class="word5" style="color: gray;">如果您对本网站内容、版权等方面有质疑，或对本站有意见建议请在“联系我们”里留下你的宝贵建议，感谢您的合作与支持！</p>
+			 <p class="word5" style="font-size: 7px;color: gray;">Copyright  2017 地平线 All Rights Reserved</p>
+		</div>
+	</body>
+</html>

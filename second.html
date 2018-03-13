@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="shortcut icon" href="img/1.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="shortcut icon" href="" typt="img/icon"/>
+		<link rel="stylesheet" href="css/title.css" type="text/css"/>
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+		
+	</head>
+	<body>
+    <script src="js/index.js">
+    </script>
+    <div class="all">
+    	<div class="title">
+    		<p class="word1">欢迎来到炫酷的跑车世界！！</p>
+    		<div class="div-ul">
+	    		<ul>
+	    			<li class="word3"><a href="" class="word2">公司概况</a></li><li class="word3"></li>
+	    		</ul>
+    		</div>
+    	</div>
+	    <div class="tu">
+	    	<div class="tu1">
+	    		<a href="second.html"><img src="img/log99.png" style="width: 100px;height: 83px;"/></a>
+	    	</div>
+	    	<div class="tu2">
+	    		<p style="color: gainsboro; font-weight:900;margin-left:10px">加速度</p>
+	    	</div>
+	    	
+	    </div>
+		<div class="containe">
+		  <div class="link">
+		    <div class="text"><a href="second.html" style="color: white;">首页</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="Ferrari.html" style="color: white;">跑车制造商</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="fourth.html" style="color: white;">跑车排行榜</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="fifth.html" style="color: white;">知名超跑车</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="first.html" style="color: white;">重新载入</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="sixth.html" style="color: white;">联系我们</a></div>
+		  </div>
+		</div>
+		<SCRIPT language=javascript>
+		        if(typeof(pgvMain) == 'function')
+		                pgvMain();
+		</SCRIPT>
+		<SCRIPT>
+		var gtopTab="one";
+		function $id(id){
+		 return document.getElementById(id); 
+		}
+		function changesTab(tab_id){
+		 if (tab_id==gtopTab){
+		  return; 
+		 }else{
+		  $id(gtopTab).className="unselect"; 
+		  $id(tab_id).className="select";
+		  $id("tab_"+gtopTab).style.display="none";
+		  $id("tab_"+tab_id).style.display="block";
+		  gtopTab=tab_id;
+		 }
+		}
+		</SCRIPT>
+		<SCRIPT type=text/javascript>
+		var $ = function (id) {
+		 return "string" == typeof id ? document.getElementById(id) : id;
+		};
+		var Extend = function(destination, source) {
+		 for (var property in source) {
+		  destination[property] = source[property];
+		 }
+		 return destination;
+		}
+		var CurrentStyle = function(element){
+		 return element.currentStyle || document.defaultView.getComputedStyle(element, null);
+		}
+		var Bind = function(object, fun) {
+		 var args = Array.prototype.slice.call(arguments).slice(2);
+		 return function() {
+		  return fun.apply(object, args.concat(Array.prototype.slice.call(arguments)));
+		 }
+		}
+		var Tween = {
+		 Quart: {
+		  easeOut: function(t,b,c,d){
+		   return -c * ((t=t/d-1)*t*t*t - 1) + b;
+		  }
+		 },
+		 Back: {
+		  easeOut: function(t,b,c,d,s){
+		   if (s == undefined) s = 1.70158;
+		   return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+		  }
+		 },
+		 Bounce: {
+		  easeOut: function(t,b,c,d){
+		   if ((t/=d) < (1/2.75)) {
+		    return c*(7.5625*t*t) + b;
+		   } else if (t < (2/2.75)) {
+		    return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+		   } else if (t < (2.5/2.75)) {
+		    return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+		   } else {
+		    return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+		   }
+		  }
+		 }
+		}
+		//容器对象,滑动对象,切换数量
+		var SlideTrans = function(container, slider, count, options) {
+		 this._slider = $(slider);
+		 this._container = $(container);//容器对象
+		 this._timer = null;//定时器
+		 this._count = Math.abs(count);//切换数量
+		 this._target = 0;//目标值
+		 this._t = this._b = this._c = 0;//tween参数
+		 
+		 this.Index = 0;//当前索引
+		 
+		 this.SetOptions(options);
+		 
+		 this.Auto = !!this.options.Auto;
+		 this.Duration = Math.abs(this.options.Duration);
+		 this.Time = Math.abs(this.options.Time);
+		 this.Pause = Math.abs(this.options.Pause);
+		 this.Tween = this.options.Tween;
+		 this.onStart = this.options.onStart;
+		 this.onFinish = this.options.onFinish;
+		 
+		 var bVertical = !!this.options.Vertical;
+		 this._css = bVertical ? "top" : "left";//方向
+		 
+		 //样式设置
+		 var p = CurrentStyle(this._container).position;
+		 p == "relative" || p == "absolute" || (this._container.style.position = "relative");
+		 this._container.style.overflow = "hidden";
+		 this._slider.style.position = "absolute";
+		 
+		 this.Change = this.options.Change ? this.options.Change :
+		  this._slider[bVertical ? "offsetHeight" : "offsetWidth"] / this._count;
+		};
+		SlideTrans.prototype = {
+		  //设置默认属性
+		  SetOptions: function(options) {
+		 this.options = {//默认值
+		  Vertical: true,//是否垂直方向（方向不能改）
+		  Auto:  true,//是否自动
+		  Change:  0,//改变量
+		  Duration: 50,//滑动持续时间
+		  Time:  10,//滑动延时
+		  Pause:  4000,//停顿时间(Auto为true时有效)
+		  onStart: function(){},//开始转换时执行
+		  onFinish: function(){},//完成转换时执行
+		  Tween:  Tween.Quart.easeOut//tween算子
+		 };
+		 Extend(this.options, options || {});
+		  },
+		  //开始切换
+		  Run: function(index) {
+		 //修正index
+		 index == undefined && (index = this.Index);
+		 index < 0 && (index = this._count - 1) || index >= this._count && (index = 0);
+		 //设置参数
+		 this._target = -Math.abs(this.Change) * (this.Index = index);
+		 this._t = 0;
+		 this._b = parseInt(CurrentStyle(this._slider)[this.options.Vertical ? "top" : "left"]);
+		 this._c = this._target - this._b;
+		 
+		 this.onStart();
+		 this.Move();
+		  },
+		  //移动
+		  Move: function() {
+		 clearTimeout(this._timer);
+		 //未到达目标继续移动否则进行下一次滑动
+		 if (this._c && this._t < this.Duration) {
+		  this.MoveTo(Math.round(this.Tween(this._t++, this._b, this._c, this.Duration)));
+		  this._timer = setTimeout(Bind(this, this.Move), this.Time);
+		 }else{
+		  this.MoveTo(this._target);
+		  this.Auto && (this._timer = setTimeout(Bind(this, this.Next), this.Pause));
+		 }
+		  },
+		  //移动到
+		  MoveTo: function(i) {
+		 this._slider.style[this._css] = i + "px";
+		  },
+		  //下一个
+		  Next: function() {
+		 this.Run(++this.Index);
+		  },
+		  //上一个
+		  Previous: function() {
+		 this.Run(--this.Index);
+		  },
+		  //停止
+		  Stop: function() {
+		 clearTimeout(this._timer); this.MoveTo(this._target);
+		  }
+		};
+		</SCRIPT>
+		<DIV id=idContainer2 class=container style="border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
+		<TABLE id=idSlider2 border=0 cellSpacing=0 cellPadding=0>
+		  <TBODY>
+		<TR>
+		<TD class=td_f><A onclick="pgvSendClick({hottag:'ISD.SHOW.BANNER.SOFTMGR'});" href=""><img src="img1/1.jpg"></A></TD>
+		<TD class=td_f><A onclick="pgvSendClick({hottag:'ISD.SHOW.BANNER.PY'});" href=""><IMG src="img1/2.jpg"></A></TD>
+		<TD class=td_f><A onclick="pgvSendClick({hottag:'ISD.SHOW.BANNER.PLAYER'});" href=""><IMG src="img1/3.jpg"></A></TD>
+		<TD class=td_f><A onclick="pgvSendClick({hottag:'ISD.SHOW.BANNER.XF'});"  href=""><IMG src="img1/4.jpg"></A></TD>
+		<TD class=td_f><A onclick="pgvSendClick({hottag:'ISD.SHOW.BANNER.TT'});"  href=""><IMG  src="img1/5.jpg"></A></TD>
+		</TR>
+		  </TBODY>
+		</TABLE>
+		<UL id=idNum class=num></UL>
+		</DIV>
+		<SCRIPT>
+		//new SlideTrans("idContainer", "idSlider", 3).Run();
+		///////////////////////////////////////////////////////////
+		var forEach = function(array, callback, thisObject){
+		 if(array.forEach){
+		  array.forEach(callback, thisObject);
+		 }else{
+		  for (var i = 0, len = array.length; i < len; i++) { callback.call(thisObject, array[i], i, array); }
+		 }
+		}
+		var st = new SlideTrans("idContainer2", "idSlider2", 5, { Vertical: false });
+		var nums = [];
+		//插入数字
+		for(var i = 0, n = st._count - 1; i <= n;){
+		 (nums[i] = $("idNum").appendChild(document.createElement("li"))).innerHTML = ++i;
+		}
+		forEach(nums, function(o, i){
+		 o.onmouseover = function(){ o.className = "on"; st.Auto = false; st.Run(i); }
+		 o.onmouseout = function(){ o.className = ""; st.Auto = true; st.Run(); }
+		})
+		//设置按钮样式
+		st.onStart = function(){
+		 forEach(nums, function(o, i){ o.className = st.Index == i ? "on" : ""; })
+		}
+		st.Run();
+     </SCRIPT>
+    </style>
+     <script src="js/jquery-1.8.3.min.js"></script>
+     <script>
+$(function(){
+	var $animate = $('#animate');
+	var $opposite = $('#opposite');
+	$(".wrap").hover(function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test");
+		$opposite.addClass('test2');
+	},function(){
+		$animate.removeClass();
+		$opposite.removeClass();
+		$animate.addClass("test2");
+		$opposite.addClass('test');
+	});
+
+	$(".well-item").hover(function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test");
+		$(this).find(".opposite").children().addClass('test2');
+	},function(){
+		$(this).find(".correct").children().removeClass();
+		$(this).find(".opposite").children().removeClass();
+		$(this).find(".correct").children().addClass("test2");
+		$(this).find(".opposite").children().addClass('test');
+	});
+
+});
+</script>
+<div class="well">
+	<div class="well-item">
+		<div class="correct"><img  class="" src="img1/ca.1.png" style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content" style="background: url(img1/ca3.1.png);background-size: 100%100%;border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
+					<div class="opposite-content-text">
+						<a href="photowall.html" class="a-word1">土豪的<br/>奢华世界</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="img1/ca.2.png" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content" style="background: url(img1/ca3.2.png);background-size: 100%100%;">
+					<div class="opposite-content-text">
+						<!--<a href="index.html" class="a-word1">请我吃披萨</a>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="img1/ca.3.png" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content" style="background: url(img1/ca3.3.png);background-size: 100%100%;">
+					<div class="opposite-content-text">
+						<!--<a href="index.html" class="a-word1">请我吃披萨</a>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="well-item">
+		<div class="correct"><img  class="" src="img1/ca.4.png" style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;" /></div>
+		<div class="opposite">
+			<div class="">
+				<div class="opposite-content" style="background: url(img1/ca3.4.png);background-size: 100%100%;border-bottom-right-radius: 10px;border-top-right-radius: 10px;" >
+					<div class="opposite-content-text">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+     <div class="middle">
+     	<img class="img-style" src="img1/f1.jpg"><br />
+     	<p class="word4">网站主要提供各类跑车模型、销售渠道以及各种跑车展示<br/>为各位爱车人士提供全方位多层面的超跑信息
+     	<br/>网站以加速度命名，比喻跑车疾驰在公路上追逐的速度之快<br/>也代表了我们自身追逐的进步的脚步不止</br>本网站由四月天制作</br>qq:1234567  电话:1234567
+</p>
+     </div>
+     <div class="footer">
+     	<p class="word5">所有作品均由创意团队网上收集，所展示的作品均用来进行非盈利活动，转至加速度只为让更多人知晓。</p>
+     	<p class="word5">如果您对本网站内容、版权等方面有质疑，或对本站有意见建议请在“联系我们”里留下你的宝贵建议，感谢您的合作与支持！</p>
+	    <p class="word5" style="font-size: 7px;">Copyright © 2017 地平线 All Rights Reserved</p>
+     </div>
+</div>
+		
+	</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>知名超跑车</title>
+		<link rel="shortcut icon" href="img/1.ico" type="image/x-icon">
+	</head>
+
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		a{
+			text-decoration: none;
+		}
+		.title{
+			width:1165;
+			height:24px;
+			border: 1px solid black;
+			background:grey;
+			opacity: 0.5;
+		}
+		.word1{
+			margin-left: 70px;
+			margin-bottom: 5px;
+			font-size: 15px;
+			float: left;
+		}
+		.word3{
+			float:right;
+			font-size:15px;
+			margin-left: 20px;
+		}
+		.div-ul{
+			width:400px;
+			height:20px;
+			float:right;
+			margin-right:50px ;
+		}
+		ul{list-style: none;}
+		.word2{
+			font-size:15px;
+			color:black;
+		}
+		.container{
+		    width:150px;
+		    height: 50%;
+		   max-width:200px;
+		   background:rgba(0, 0, 0, 0.75);
+		   margin:150px 30px;
+		   padding:10px 0px 20px 0px;
+		/*   border:1px solid #111;*/
+		   border-radius:4px;
+		   box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+		   position: fixed;
+		   overflow: hidden;
+		}
+		.link{
+		   font-size:16px;
+		   font-weight:300;
+		   text-align:center;
+		   position:relative;
+		   height:40px;
+		   line-height:40px;
+		   margin-top:10px;
+		   overflow:hidden;
+		   width:90%;
+		   margin-left:5%;
+		   cursor:pointer;
+		}
+		.link:after{
+		   content: '';
+		   position:absolute;
+		   width:80%;
+		   border-bottom:1px solid rgba(255, 255, 255, 0);
+		   bottom:50%;
+		   left:-100%;
+		   transition-delay: all 0.5s;
+		   transition: all 0.5s;
+		}
+		.link:hover:after,
+		.link.hover:after{
+		   left:100%;
+		}
+		.link .text{
+		   text-shadow:0px -40px 0px rgba(255, 255, 255, 1);
+		   transition:all 0.75s;
+		   transform:translateY(100%) translateZ(0);
+		   transition-delay:all 0.25s;
+		}
+		.link:hover .text,
+		.link.hover .text{
+		   text-shadow:0px -40px 0px rgba(255, 255, 255, 0);
+		   transform:translateY(0%) translateZ(0) scale(1.1);
+		   font-weight:600;
+		}
+		.tu
+		{
+		 width: 150px;
+		 height: 148px;
+		 position: fixed;
+		 top: 30px;
+		 left: 27px;
+		}
+		.tu1
+		{
+			width: 149px;
+			height: 90px;
+		padding-left: 25px;
+		    padding-top: 9px;
+		}
+		.tu2
+		{
+			width: 149px;
+			height: 40px;
+			padding-left: 47px;
+			font-size: 20px;
+		}
+		.word4{
+			font-size: 20px;
+		}
+		a:hover{
+			color:red;
+		}
+
+		.h{
+			width: 1517px;
+			height: 100%;
+			/*border: 1px solid green;*/
+		}
+		.bg{
+			background-attachment: fixed;
+			background-size: 120% 150%;
+		}
+		.middle{
+			width: 100%;
+			height: 2660px;
+			/*border: 1px solid red;*/
+		}
+		body { background-color: #EFEFEF; }
+		.middle11a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle11a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%;; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle11a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle11a:hover figure figcaption { opacity: 1; }
+		.middle11a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		body { background-color: #EFEFEF; }
+		.middle12a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle12a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle12a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle12a:hover figure figcaption { opacity: 1; }
+		.middle12a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		body { background-color: #EFEFEF; }
+		.middle21a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle21a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle21a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle21a:hover figure figcaption { opacity: 1; }
+		.middle21a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		body { background-color: #EFEFEF; }
+		.middle22a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle22a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle22a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle22a:hover figure figcaption { opacity: 1; }
+		.middle22a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		body { background-color: #EFEFEF; }
+		.middle31a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle31a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle31a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle31a:hover figure figcaption { opacity: 1; }
+		.middle31a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		body { background-color: #EFEFEF; }
+		.middle32a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle32a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle32a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle32a:hover figure figcaption { opacity: 1; }
+		.middle32a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+				body { background-color: #EFEFEF; }
+		.middle41a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle41a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle41a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle41a:hover figure figcaption { opacity: 1; }
+		.middle41a figure:after { content: " "; display: block; width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}		
+		body { background-color: #EFEFEF; }
+		.middle42a figure { position: relative; transform-style: preserve-3d; transition: 1s transform; font-size: 1.6rem;}
+		.middle42a figure figcaption { position: absolute; width: 100%; height: 232px; top: 0;  transform: rotateY(.5turn) translateZ(1px);
+		background: rgba(255,255,255,0.9); text-align: center; padding-top: 45%; opacity: 0.6; transition: 1s .5s opacity; }
+		.middle42a:hover figure { transform: rotateY(.5turn);
+		}
+		.middle42a:hover figure figcaption { opacity: 1; }
+		.middle42a figure:after { content: " "; display: block;  width: 100%; transform: rotateX(90deg); background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+		@media screen and (max-width: 800px) {
+		. figure figcaption { font-size: 0.8rem; }
+		}
+		.middle11a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: left;
+			margin-left:12% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow:hidden;
+		}
+		.middle12a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: right;
+			margin-right:20% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow:hidden;
+		}
+		.middle21a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: left;
+			margin-left:12% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow: hidden;
+		}
+		.middle22a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: right;
+			margin-right:20% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow:hidden;
+		}
+		.middle31a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: left;
+			margin-left:12% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow: hidden;
+		}
+		.middle32a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: right;
+			margin-right:20% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow: hidden;
+		}
+		.middle41a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: left;
+			margin-left:12% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow: hidden;
+		}
+		.middle42a{
+			width: 31%;
+			height: 440px;
+			/*border: 1px solid blue;*/
+			float: right;
+			margin-right:20% ;
+			margin-top: 50px;
+			border-radius: 15%;
+			overflow: hidden;
+		}
+		.b1{
+			width: 31%;
+			height: 100px;
+			/*border: 1px solid red;*/
+			float: left;
+			margin-left:16% ;
+			margin-top: 60px;
+		}
+		.b2{
+			width: 31%;
+			height: 100px;
+			/*border: 1px solid yellow;*/
+			float: right;
+			margin-right:24% ;
+			margin-top: 60px;
+		}
+		.bottom{
+		width:100%;
+		height:100px;
+		/*border: 1px solid yellow;*/
+		text-align: center;
+		padding-top: 100px;
+		}
+	</style>
+	<body background="img/bj.jpg" class="bg">
+	
+	<div class="h">
+		<div class="title">
+    		<p class="word1">欢迎来到炫酷的跑车世界！！</p>
+    		<div class="div-ul">
+	    		<ul>
+	    			<li class="word3"><a href="" class="word2">公司概况</a></li><li class="word3"></li>
+	    		</ul>
+    		</div>
+    	</div>
+		<div class="tu">
+	    	<div class="tu1">
+	    		<a href="second.html"><img src="img/log99.png" style="width: 100px;height: 83px;"/></a>
+	    	</div>
+	    	<div class="tu2">
+	    		<p style="color: gainsboro; font-weight:900;">加速度</p>
+	    	</div>
+	    </div>
+		<script src="js/index.js">
+	    </script>
+		<div class="container">
+		  <div class="link">
+		    <div class="text"><a href="second.html" style="color: white;">首页</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="Ferrari.html" style="color: white;">跑车制造商</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="fourth.html" style="color: white;">跑车排行榜</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="fifth.html" style="color: white;">知名超跑车</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="first.html" style="color: white;">重新载入</a></div>
+		  </div>
+		  <div class="link">
+		    <div class="text"><a href="sixth.html" style="color: white;">联系我们</a></div>
+		  </div>
+		</div>
+		<!--中部s-->
+		<div class="middle">
+			<div class="middle11a">
+				 <figure> <img src="img/1.jpg">
+				 <figcaption style="color:#FE4725 ;">Lykan Hypersport是由成立于2012年的黎巴嫩的公司W Motors所限量生产的跑车，全球限量生产7台,是一款全新超跑.</figcaption>
+				 </figure>
+			</div>
+			<div class="b2">
+				<p style="font-size: 50px;color:#FE4725 ;">LykanHypersport</p>
+			</div>
+			<div class="middle12a">
+				<figure> <img src="img/2.jpg"/>
+				<figcaption style="color: #0EB4FD;">chiron是布加迪威航（Veyron）的继任者，Chiron可以在不到2.5秒的时间内完成0-100km/h加速。</figcaption>
+				 </figure>
+			</div>
+			<div class="b1">
+				<p style="font-size: 50px;text-align: right;color: #0EB4FD;">chiron</p>
+			</div>
+			<div class="middle21a">
+				<figure> <img src="img/3.jpg"/>
+				<figcaption style="color:#000000 ;">美国的超级跑车制造商西尔贝超跑（SSC）旗下新一代超级跑车Tuatara,Tuatara超跑车由意大利籍超跑设计师杰森·卡斯特罗塔（Jason Castriota）设计这位著名的设计大师最著名的杰作便是为人熟知的玛莎拉蒂GT.</figcaption>
+				 </figure>
+			</div>
+			<div class="b2">
+				<p style="font-size: 50px;color:#ffffff ;">Tuatara</p>
+			</div>
+			<div class="middle22a">
+				<figure> <img src="img/4.jpg"/>
+				<figcaption>法拉利Enzo是历史上的一款传奇车型，以公司创始人的名字Enzo Ferrari（恩佐·法拉利）命名，国内则一般称其为法拉利Enzo。作为法拉利F50的替代品，Enzo于2002年制造，采用12缸中置引擎，售价为60万美元。</figcaption>
+				 </figure>
+			</div>
+			<div class="b1">
+				<p style="font-size: 50px;text-align: right;color: #20160D;">enzo</p>
+			</div>
+			<div class="middle31a">
+				<figure> <img src="img/5.jpg"/>
+				<figcaption>Koenigsegg科尼赛格是一家来自瑞典的超级跑车制造商，这辆车是2013年的基本款，白色车身。</figcaption>
+				 </figure>
+			</div>
+			<div class="b2">
+				<p style="font-size: 50px;color:#FFFFFF ;">Agera RS</p>
+			</div>
+			<div class="middle32a">
+				<figure> <img src="img/6.jpg"/>
+				<figcaption style="color:#C2B295 ;">兰博基尼的50周年庆典上推出了名为Egoista的概念车，车型采用非常独特的单座布局。这款概念车是由大众集团首席设计师瓦尔特·德·席尔瓦亲自操刀设计的，整车的线条感极强，立体感和层次感非常丰富。</figcaption>
+				 </figure>
+			</div>
+			<div class="b1">
+				<p style="font-size: 50px;text-align: right;color: #C2B295;">egoista</p>
+			</div>
+			<div class="middle41a">
+				<figure> <img src="img/7.jpg"/>
+				<figcaption style="color: #AFABA8;">帕加尼Huayra是由来自意大利的跑车制造商帕加尼（Pagani）制造,将替代帕加尼Zonda成为帕加尼公司的主力车型。它有鸥翼车门设计、楔形的车鼻、水滴状的玻璃车厢，羊驼色的真皮座椅和全碳纤维材质的车身。</figcaption>
+				 </figure>
+			</div>
+			<div class="b2">
+				<p style="font-size: 50px;color:#AFABA8 ;">Huayra</p>
+			</div>
+			<div class="middle42a">
+				<figure> <img src="img/8.jpg"/>
+				<figcaption>世爵C8，设计的细节的时候应该是想强调汽车外形的美观性，C8在外形设计上采用恰当的比例，营造出无法抗拒的魅力，这与红玺台“为中国的精英群体打造低调奢华的宜居生活”的建筑理念不谋而合。</figcaption>
+				 </figure>
+			</div>
+			<div class="b1">
+				<p style="font-size: 50px;text-align: right;color: #FFFFFF;">C8</p>
+			</div>
+		</div>
+		<!--中部e-->
+		<!--下部s-->
+		<div class="bottom">
+     		<p class="word5"style="color: gray;">所有作品均由创意团队网上收集，所展示的作品均用来进行非盈利活动，转至加速度只为让更多人知晓。</p>
+     		<p class="word5"style="color: gray;">如果您对本网站内容、版权等方面有质疑，或对本站有意见建议请在“联系我们”里留下你的宝贵建议，感谢您的合作与支持！</p>
+	    	<p class="word5" style="font-size: 7px;color: gray;">Copyright  2017 地平线 All Rights Reserved</p>
+    	</div>
+	</div>
+		<!--下部e-->
+	</body>
+</html>
